@@ -42,3 +42,7 @@ li {
   font-size: 13px !important;
   height: 25px !important;
 }
+
+#popup {
+  /* display:none; */
+}
