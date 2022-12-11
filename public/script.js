@@ -48,7 +48,7 @@ function myFunction(){
 
     function displayLocation(city, country){
         let loc = city + ", " + country;
-        console.log(loc)
+        // console.log(loc)
 
         let location = document.getElementById("location");
         location.innerHTML = `<p>You live in <b>${loc}</b></p>`               
@@ -78,7 +78,7 @@ function timeCalculations(){
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    if(seconds % 4 == 0){
+    if(seconds % 10 == 0){
         randomSelectCities();
     }
 
@@ -132,7 +132,7 @@ function randomSelectCities(){
             return response.json();
         })
         .then(function (data) {
-            console.log(data[rank])
+            // console.log(data[rank])
             plotCity(data[rank]);
         })
 }
